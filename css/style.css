@@ -3,13 +3,14 @@
     
 }
 
-li:first-child {
+
+#first li:first-child {
 
     text-transform:uppercase;
     
     }
 
-ul li:nth-child(2n) {
+    #first ul li:nth-child(2n) {
 
     color:#F00;
 
