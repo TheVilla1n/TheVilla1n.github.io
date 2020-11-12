@@ -13,12 +13,19 @@
     <script type="text/javascript" src="js/script.js"></script>	     
 	<!-- - scripts -->
     <h1></h1>
+    <style>
+       #main .sub.current li li {
+        color: #f00;
+}
+    </style>
+    
   
 
-<div id="Home">
 
-    <ul class="list">
-        <li>First</li>
+<h4>Перше завдання:</h4>
+<div id="main">
+    <ul >
+        <li >First
         <li>Second</li>
         <li>Third</li>
         <li>Fourth</li>
@@ -26,10 +33,24 @@
         <li>Sixth</li>
         <li>Seventh</li>
         <li>Eighth</li>
-
+</li>
     </ul>
+        
+    </div> 
+    <h4>Друге завдання:</h4>
+    <div id="main">
+        <div class="current sub">
+          <ul>
+            <li>First</li>
+            <li>
+              <ol>
+                <li>Second</li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+      </div>
     
-</div> 
 
     
     <!-- - code -->

@@ -1,4 +1,19 @@
 
 .list{
-    text-transform:uppercase;
+    
 }
+
+li:first-child {
+
+    text-transform:uppercase;
+    
+    }
+
+ul li:nth-child(2n) {
+
+    color:#F00;
+
+    }
+
+  
+
