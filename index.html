@@ -221,9 +221,30 @@ var_dump($_POST);
 
 <h4>Десяте завдання:</h4>
 
-В процесі...
+<p>$arr = [
+  [
+      ["34.2", "12.2", "10.2"],
+      ["11",  "8",  "4"]
+  ],
+  [
+      ["99.2",  "5.2", "19.2"],
+      ["12.2",  "9.2", "10.2"]
+  ]
+];
 
-<h4>Одинадцяте :</h4>
+function arrToInt($elem){
+  if (is_array($elem)){
+      return array_map('arrToInt', $elem);
+  }
+  else{
+      return intval($elem);
+  }
+}
+
+$result = array_map('arrToInt', $arr);
+var_dump($result);</p>
+
+<h4>Одинадцяте завдання :</h4>
     
 Один сеанс - до закриття браузера
 
