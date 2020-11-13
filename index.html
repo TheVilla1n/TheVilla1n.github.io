@@ -221,28 +221,29 @@ var_dump($_POST);
 
 <h4>Десяте завдання:</h4>
 
-<p>$arr = [
-  [
-      ["34.2", "12.2", "10.2"],
-      ["11",  "8",  "4"]
-  ],
-  [
-      ["99.2",  "5.2", "19.2"],
-      ["12.2",  "9.2", "10.2"]
-  ]
-];
+<p>$arr = [<br>
+  [<br>
+      ["34.2", "12.2", "10.2"],<br>
+      ["11",  "8",  "4"]<br>
+  ],<br>
+  [<br>
+      ["99.2",  "5.2", "19.2"],<br>
+      ["12.2",  "9.2", "10.2"]<br>
+  ]<br>
+];<br>
 
-function arrToInt($elem){
-  if (is_array($elem)){
-      return array_map('arrToInt', $elem);
-  }
-  else{
-      return intval($elem);
-  }
-}
+function arrToInt($elem){<br>
+  if (is_array($elem)){<br>
+      return array_map('arrToInt', $elem);<br>
+  }<br>
+  else{<br>
+      return intval($elem);<br>
+  }<br>
+}<br>
 
-$result = array_map('arrToInt', $arr);
-var_dump($result);</p>
+$result = array_map('arrToInt', $arr);<br>
+var_dump($result);<br>
+</p>
 
 <h4>Одинадцяте завдання :</h4>
     
